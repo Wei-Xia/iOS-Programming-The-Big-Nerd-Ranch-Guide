@@ -24,8 +24,22 @@ int main(int argc, const char * argv[])
         // Send another message, insertObject:atIndex:, to that same array object
         [items insertObject:@"Zero" atIndex:0];
         
+
+//        // Iterating over an array
+//        // For every item in the items array
+//        for (NSString *item in items) {
+//            // Log the description of item
+//            NSLog(@"%@", items);
+//        }
+        
+        for (int i = 0; i<[items count]; i++) {
+            NSString *item = [items objectAtIndex:i];
+            NSLog(@"%@",item);
+        }
+        
         // Destory the mutable array object
         items = nil;
+        
         
     }
     return 0;
