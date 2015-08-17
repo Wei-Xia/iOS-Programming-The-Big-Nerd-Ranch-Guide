@@ -17,6 +17,13 @@
     NSDate *_dateCreated;
 }
 
+-(instancetype)initWithItemName:(NSString *)name
+                 valueInDollars:(int)value
+                   serialNumber:(NSString *)sNumber;
+
+-(instancetype)initwithItemName:(NSString *)name;
+
+
 -(void)setItemName: (NSString *)str;
 -(NSString *)itemName;
 
