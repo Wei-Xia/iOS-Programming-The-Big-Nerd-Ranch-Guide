@@ -35,7 +35,7 @@
                            @"What is the capital of Vermont?"];
         
         self.answers = @[@"Grapes",
-                         @"14"
+                         @"14",
                          @"Montpelier"];
         
     }
