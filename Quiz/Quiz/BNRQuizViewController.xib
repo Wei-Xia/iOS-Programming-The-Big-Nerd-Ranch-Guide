@@ -38,7 +38,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="Bhm-O9-s73"/>
+                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="b8L-uk-GmM"/>
                     </connections>
                 </button>
                 <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFL-6D-1LQ">
@@ -50,8 +50,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="showAnswer:" destination="-1" eventType="touchUpInside" id="Tjd-f4-6KR"/>
-                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="4hm-TX-lpT"/>
+                        <action selector="showAnswer:" destination="-1" eventType="touchUpInside" id="NTj-m3-uQm"/>
                     </connections>
                 </button>
             </subviews>
