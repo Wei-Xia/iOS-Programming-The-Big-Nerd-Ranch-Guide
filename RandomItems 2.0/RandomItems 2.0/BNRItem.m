@@ -109,19 +109,19 @@
     return _valueInDollars;
 }
 
--(NSDate *)dateCreated
+- (NSDate *)dateCreated
 {
     return _dateCreated;
 }
 
--(NSString *)description
+- (NSString *)description
 {
     NSString *descriptionString =
-    [[NSString alloc]initWithFormat:@"%@ (%@): Worth $%d, recorded on %@",
-     self.itemName,
-     self.serialNumber,
-     self.valueInDollars,
-     self.dateCreated];
+        [[NSString alloc] initWithFormat:@"%@ (%@): Worth $%d, recorded on %@",
+         self.itemName,
+         self.serialNumber,
+         self.valueInDollars,
+         self.dateCreated];
     
     return descriptionString;
 }

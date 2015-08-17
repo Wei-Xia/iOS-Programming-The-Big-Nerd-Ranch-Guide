@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface BNRItem : NSObject
-
 {
     NSString *_itemName;
     NSString *_serialNumber;
