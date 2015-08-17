@@ -62,6 +62,12 @@ int main(int argc, const char * argv[])
         // The %@ token is replaced with the result of sending the description message to the corresponding argument
         NSLog(@"%@",item);
         
+        BNRItem *itemWithName = [[BNRItem alloc] initwithItemName:@"Blue Sofa"];
+        NSLog(@"%@",itemWithName);
+        
+        BNRItem *itemWithNoname = [[BNRItem alloc] init];
+        NSLog(@"%@", itemWithNoname);
+        
         // Destory the mutable array object
         items = nil;
         
