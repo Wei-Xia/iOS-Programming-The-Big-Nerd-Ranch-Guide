@@ -17,7 +17,7 @@
     NSDate *_dateCreated;
 }
 
-+ (instancetype) randonItem;
++ (instancetype) randomItem;
 
 // Designated initializer for BNRItem
 -(instancetype)initWithItemName:(NSString *)name
