@@ -17,6 +17,8 @@
     NSDate *_dateCreated;
 }
 
++ (instancetype) randonItem;
+
 // Designated initializer for BNRItem
 -(instancetype)initWithItemName:(NSString *)name
                  valueInDollars:(int)value
