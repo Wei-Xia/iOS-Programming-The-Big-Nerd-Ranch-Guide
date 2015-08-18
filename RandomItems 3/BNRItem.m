@@ -10,10 +10,33 @@
 
 @implementation BNRItem
 
-//- (void) dealloc
-//{
-//    NSLog(@"Destroyed: %@",self);
-//}
+- (void) dealloc
+{
+    NSLog(@"Destroyed: %@",self);
+}
+
+-(void)setContainedItem:(BNRItem *)item
+{
+    _containedItem = item;
+    
+    // When given an item to contain, the contained item will be given a pointer to its container
+    item.container = self;
+}
+
+- (BNRItem *)containedItem
+{
+    return  _containedItem;
+}
+
+- (void)setContainer:(BNRItem *)item
+{
+    _container = item;
+}
+
+- (BNRItem *)container
+{
+    return _container;
+}
 
 + (instancetype)randomItem
 {
