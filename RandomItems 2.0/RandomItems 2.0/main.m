@@ -21,6 +21,11 @@ int main(int argc, const char * argv[])
             [items addObject:item];
         }
         
+        id lastObj = [items lastObject];
+        
+//        // lastObj is an instance of BNRItem and will not understand the count message
+//        [lastObj count];
+        
         for (BNRItem *item in items) {
             NSLog(@"%@", item);
         }
