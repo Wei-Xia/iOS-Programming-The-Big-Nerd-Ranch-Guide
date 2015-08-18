@@ -10,6 +10,11 @@
 
 @implementation BNRItem
 
+- (void) dealloc
+{
+    NSLog(@"Destroyed: %@",self);
+}
+
 + (instancetype)randomItem
 {
     // Create an immutable array of three adjectives
