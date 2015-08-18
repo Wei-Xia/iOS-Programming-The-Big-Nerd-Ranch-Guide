@@ -10,10 +10,10 @@
 
 @implementation BNRItem
 
-- (void) dealloc
-{
-    NSLog(@"Destroyed: %@",self);
-}
+//- (void) dealloc
+//{
+//    NSLog(@"Destroyed: %@",self);
+//}
 
 + (instancetype)randomItem
 {
