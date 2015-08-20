@@ -28,6 +28,7 @@ int main(int argc, const char * argv[])
         calculator = nil;
         
         
+        
         for (BNRItem *item in items) {
             NSLog(@"%@", item);
         }
