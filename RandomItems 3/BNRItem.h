@@ -11,6 +11,14 @@
 
 @interface BNRItem : NSObject
 
++ (instancetype) randomItem;
+
+-(instancetype)initWithItemName:(NSString *)name
+                 valueInDollars:(int)value
+                   serialNumber:(NSString *)sNumber;
+
+-(instancetype)initwithItemName:(NSString *)name;
+
 @property BNRItem *containedItem;
 @property BNRItem *container;
 
@@ -19,13 +27,5 @@
 @property int valueInDollars;
 @property NSDate *dateCreated;
 
-
-+ (instancetype) randomItem;
-
--(instancetype)initWithItemName:(NSString *)name
-                 valueInDollars:(int)value
-                   serialNumber:(NSString *)sNumber;
-
--(instancetype)initwithItemName:(NSString *)name;
 
 @end
