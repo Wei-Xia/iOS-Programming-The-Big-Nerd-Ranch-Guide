@@ -17,7 +17,7 @@
                  valueInDollars:(int)value
                    serialNumber:(NSString *)sNumber;
 
--(instancetype)initwithItemName:(NSString *)name;
+-(instancetype)initWithItemName:(NSString *)name;
 
 @property (nonatomic, strong) BNRItem *containedItem;
 @property (nonatomic, weak) BNRItem *container;
