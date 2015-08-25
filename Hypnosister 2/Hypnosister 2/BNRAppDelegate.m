@@ -1,6 +1,6 @@
 //
 //  BNRAppDelegate.m
-//  Hypnosister
+//  Hypnosister 2
 //
 //  Created by Wei on 8/24/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
@@ -26,7 +26,7 @@
     BNRHypnosisView *secondView = [[BNRHypnosisView alloc] initWithFrame:secondFrame];
     secondView.backgroundColor = [UIColor blueColor];
     
-//    [self.window addSubview:secondView];  // Two separate colors in UI
+    //    [self.window addSubview:secondView];  // Two separate colors in UI
     [firstView addSubview:secondView]; // secondView is subview of firstView
     
     // Override point for customization after application launch.
@@ -43,7 +43,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
