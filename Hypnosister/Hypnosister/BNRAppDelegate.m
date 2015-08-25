@@ -7,12 +7,20 @@
 //
 
 #import "BNRAppDelegate.h"
+#import "BNRHypnosisView.h"
 
 @implementation BNRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+    
+    BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
+    firstView.backgroundColor = [UIColor blackColor];
+    
+    [self.window addSubview:firstView];
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
