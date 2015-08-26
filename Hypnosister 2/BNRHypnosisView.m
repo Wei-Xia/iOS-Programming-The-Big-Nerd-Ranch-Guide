@@ -31,7 +31,20 @@
     // The circle will be the largest that will fit in the view
     float radius = MIN(bounds.size.width, bounds.size.height) / 2.0;
     
-    UIBeziePath *path = [[UIBezierPath alloc] init];
+    UIBezierPath *path = [[UIBezierPath alloc] init];
+    
+    // Add an arc to the path at center, with radius of radius, from 0 to 2*PI radians (a circle)
+    [path addArcWithCenter:center
+                    radius:radius
+                startAngle:0.0
+                  endAngle:M_PI * 2.0
+                 clockwise:YES];
+    
+    // Configure line width to 10 points
+    path.lineWidth = 10;
+    
+    // Draw the line
+    [path stroke];
     
 }
 
