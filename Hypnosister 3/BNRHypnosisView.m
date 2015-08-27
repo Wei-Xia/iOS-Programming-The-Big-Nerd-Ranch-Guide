@@ -30,11 +30,14 @@
     center.y = bounds.origin.y + bounds.size.height / 2.0;
     
     // The largest circle will circumscribe the view
-    float maxRadius = hypotf(bounds.size.width, bounds.size.height) / 2.0;
+    float maxRadius = hypot(bounds.size.width, bounds.size.height) / 2.0;
     
     UIBezierPath *path = [[UIBezierPath alloc] init];
     
-    for (float currentRadius; currentRadius>0; currentRadius -=20) {
+    for (float currentRadius = maxRadius; currentRadius>0; currentRadius -=20) {
+        
+        [path moveToPoint:CGPointMake(center.x + currentRadius, center.y)];
+        
         [path addArcWithCenter:center
                         radius:currentRadius // Note this is currentRadius!
                     startAngle:0.0
