@@ -49,7 +49,7 @@
     path.lineWidth = 10;
     
     // Configure the drawing color to light gray
-    [[UIColor lightGrayColor] setStroke];
+    [[UIColor redColor] setStroke];
     
     // Draw the line
     [path stroke];
