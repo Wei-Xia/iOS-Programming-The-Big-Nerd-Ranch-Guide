@@ -53,7 +53,6 @@
     
     // Draw the line
     [path stroke];
-    
 }
 
 @end
