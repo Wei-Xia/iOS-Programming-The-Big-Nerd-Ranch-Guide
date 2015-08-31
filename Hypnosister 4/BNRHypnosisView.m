@@ -8,6 +8,12 @@
 
 #import "BNRHypnosisView.h"
 
+@interface BNRHypnosisView ()
+
+@property (strong, nonatomic) UIColor *circleColor;
+
+@end
+
 @implementation BNRHypnosisView
 
 - (id)initWithFrame:(CGRect)frame
@@ -16,6 +22,7 @@
     if (self) {
         // All BNRHypnosisViews start with a clear background color
         self.backgroundColor = [UIColor clearColor];
+        self.circleColor = [UIColor lightGrayColor];
     }
     return self;
 }
@@ -48,8 +55,8 @@
     // Configure line width to 10 points
     path.lineWidth = 10;
     
-    // Configure the drawing color to light gray
-    [[UIColor redColor] setStroke];
+
+    [self.circleColor setStroke];
     
     // Draw the line
     [path stroke];
