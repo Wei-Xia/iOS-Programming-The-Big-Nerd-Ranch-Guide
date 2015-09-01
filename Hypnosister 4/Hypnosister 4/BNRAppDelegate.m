@@ -14,11 +14,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    CGRect firstFrame = self.window.bounds;
+    // Override point for custoomization after application launch
     
-    BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
-    //    firstView.backgroundColor = [UIColor redColor];
-    [self.window addSubview:firstView];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
