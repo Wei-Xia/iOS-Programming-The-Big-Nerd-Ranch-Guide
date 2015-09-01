@@ -19,6 +19,7 @@
 		B619030D1B953CF700D41075 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61902F51B953CF700D41075 /* UIKit.framework */; };
 		B61903151B953CF700D41075 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B61903131B953CF700D41075 /* InfoPlist.strings */; };
 		B61903171B953CF700D41075 /* Hypnosister_5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B61903161B953CF700D41075 /* Hypnosister_5Tests.m */; };
+		B61903221B953D1200D41075 /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = B61903211B953D1200D41075 /* BNRHypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		B61903121B953CF700D41075 /* Hypnosister 5Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hypnosister 5Tests-Info.plist"; sourceTree = "<group>"; };
 		B61903141B953CF700D41075 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B61903161B953CF700D41075 /* Hypnosister_5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hypnosister_5Tests.m; sourceTree = "<group>"; };
+		B61903201B953D1200D41075 /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRHypnosisView.h; path = ../BNRHypnosisView.h; sourceTree = "<group>"; };
+		B61903211B953D1200D41075 /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRHypnosisView.m; path = ../BNRHypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				B61903001B953CF700D41075 /* BNRAppDelegate.h */,
 				B61903011B953CF700D41075 /* BNRAppDelegate.m */,
+				B61903201B953D1200D41075 /* BNRHypnosisView.h */,
+				B61903211B953D1200D41075 /* BNRHypnosisView.m */,
 				B61903031B953CF700D41075 /* Images.xcassets */,
 				B61902F81B953CF700D41075 /* Supporting Files */,
 			);
@@ -242,6 +247,7 @@
 			files = (
 				B61902FE1B953CF700D41075 /* main.m in Sources */,
 				B61903021B953CF700D41075 /* BNRAppDelegate.m in Sources */,
+				B61903221B953D1200D41075 /* BNRHypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
